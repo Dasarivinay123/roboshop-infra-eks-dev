@@ -1,0 +1,517 @@
+{
+    "SecurityGroups": [
+        {
+            "GroupId": "sg-0713b647ce09b20a8",
+            "IpPermissionsEgress": [
+                {
+                    "IpProtocol": "-1",
+                    "UserIdGroupPairs": [],
+                    "IpRanges": [
+                        {
+                            "CidrIp": "0.0.0.0/0"
+                        }
+                    ],
+                    "Ipv6Ranges": [],
+                    "PrefixListIds": []
+                }
+            ],
+            "Tags": [
+                {
+                    "Key": "Environment",
+                    "Value": "dev"
+                },
+                {
+                    "Key": "Project",
+                    "Value": "roboshop"
+                },
+                {
+                    "Key": "Terraform",
+                    "Value": "true"
+                },
+                {
+                    "Key": "Name",
+                    "Value": "roboshop-dev-eks-control-plane"
+                }
+            ],
+            "VpcId": "vpc-0c955eca9b463496a",
+            "SecurityGroupArn": "arn:aws:ec2:us-east-1:039077527503:security-group/sg-0713b647ce09b20a8",
+            "OwnerId": "039077527503",
+            "GroupName": "roboshop-dev-eks-control-plane",
+            "Description": "Allow traffic for eks-control-plane project roboshop in dev",
+            "IpPermissions": [
+                {
+                    "IpProtocol": "-1",
+                    "UserIdGroupPairs": [
+                        {
+                            "UserId": "039077527503",
+                            "GroupId": "sg-07ddc6eba7131ab7a"
+                        }
+                    ],
+                    "IpRanges": [
+                        {
+                            "CidrIp": "10.0.0.0/16"
+                        }
+                    ],
+                    "Ipv6Ranges": [],
+                    "PrefixListIds": []
+                },
+                {
+                    "IpProtocol": "tcp",
+                    "FromPort": 443,
+                    "ToPort": 443,
+                    "UserIdGroupPairs": [
+                        {
+                            "UserId": "039077527503",
+                            "GroupId": "sg-0f5583609e7ac7620"
+                        }
+                    ],
+                    "IpRanges": [],
+                    "Ipv6Ranges": [],
+                    "PrefixListIds": []
+                }
+            ]
+        },
+        {
+            "GroupId": "sg-07bee23721a229901",
+            "IpPermissionsEgress": [
+                {
+                    "IpProtocol": "-1",
+                    "UserIdGroupPairs": [],
+                    "IpRanges": [
+                        {
+                            "CidrIp": "0.0.0.0/0"
+                        }
+                    ],
+                    "Ipv6Ranges": [],
+                    "PrefixListIds": []
+                }
+            ],
+            "VpcId": "vpc-07c65415bef240784",
+            "SecurityGroupArn": "arn:aws:ec2:us-east-1:039077527503:security-group/sg-07bee23721a229901",
+            "OwnerId": "039077527503",
+            "GroupName": "launch-wizard-1",
+            "Description": "launch-wizard-1 created 2026-10-05T16:41:14.447Z",
+            "IpPermissions": [
+                {
+                    "IpProtocol": "tcp",
+                    "FromPort": 22,
+                    "ToPort": 22,
+                    "UserIdGroupPairs": [],
+                    "IpRanges": [
+                        {
+                            "CidrIp": "115.99.155.188/32"
+                        }
+                    ],
+                    "Ipv6Ranges": [],
+                    "PrefixListIds": []
+                }
+            ]
+        },
+        {
+            "GroupId": "sg-07ddc6eba7131ab7a",
+            "IpPermissionsEgress": [
+                {
+                    "IpProtocol": "-1",
+                    "UserIdGroupPairs": [],
+                    "IpRanges": [
+                        {
+                            "CidrIp": "0.0.0.0/0"
+                        }
+                    ],
+                    "Ipv6Ranges": [],
+                    "PrefixListIds": []
+                }
+            ],
+            "Tags": [
+                {
+                    "Key": "Environment",
+                    "Value": "dev"
+                },
+                {
+                    "Key": "Project",
+                    "Value": "roboshop"
+                },
+                {
+                    "Key": "Name",
+                    "Value": "roboshop-dev-eks-node"
+                },
+                {
+                    "Key": "Terraform",
+                    "Value": "true"
+                }
+            ],
+            "VpcId": "vpc-0c955eca9b463496a",
+            "SecurityGroupArn": "arn:aws:ec2:us-east-1:039077527503:security-group/sg-07ddc6eba7131ab7a",
+            "OwnerId": "039077527503",
+            "GroupName": "roboshop-dev-eks-node",
+            "Description": "Allow traffic for eks-node project roboshop in dev",
+            "IpPermissions": [
+                {
+                    "IpProtocol": "-1",
+                    "UserIdGroupPairs": [
+                        {
+                            "UserId": "039077527503",
+                            "GroupId": "sg-0713b647ce09b20a8"
+                        }
+                    ],
+                    "IpRanges": [],
+                    "Ipv6Ranges": [],
+                    "PrefixListIds": []
+                }
+            ]
+        },
+        {
+            "GroupId": "sg-099b75df48e57d7ec",
+            "IpPermissionsEgress": [
+                {
+                    "IpProtocol": "-1",
+                    "UserIdGroupPairs": [],
+                    "IpRanges": [
+                        {
+                            "CidrIp": "0.0.0.0/0"
+                        }
+                    ],
+                    "Ipv6Ranges": [],
+                    "PrefixListIds": []
+                }
+            ],
+            "VpcId": "vpc-07c65415bef240784",
+            "SecurityGroupArn": "arn:aws:ec2:us-east-1:039077527503:security-group/sg-099b75df48e57d7ec",
+            "OwnerId": "039077527503",
+            "GroupName": "launch-wizard-4",
+            "Description": "launch-wizard-4 created 2026-10-09T01:25:49.582Z",
+            "IpPermissions": [
+                {
+                    "IpProtocol": "tcp",
+                    "FromPort": 22,
+                    "ToPort": 22,
+                    "UserIdGroupPairs": [],
+                    "IpRanges": [
+                        {
+                            "CidrIp": "115.99.155.188/32"
+                        }
+                    ],
+                    "Ipv6Ranges": [],
+                    "PrefixListIds": []
+                }
+            ]
+        },
+        {
+            "GroupId": "sg-038ac7cb8eba0e884",
+            "IpPermissionsEgress": [
+                {
+                    "IpProtocol": "-1",
+                    "UserIdGroupPairs": [],
+                    "IpRanges": [
+                        {
+                            "CidrIp": "0.0.0.0/0"
+                        }
+                    ],
+                    "Ipv6Ranges": [],
+                    "PrefixListIds": []
+                }
+            ],
+            "VpcId": "vpc-07c65415bef240784",
+            "SecurityGroupArn": "arn:aws:ec2:us-east-1:039077527503:security-group/sg-038ac7cb8eba0e884",
+            "OwnerId": "039077527503",
+            "GroupName": "launch-wizard-5",
+            "Description": "launch-wizard-5 created 2026-10-10T02:56:44.723Z",
+            "IpPermissions": [
+                {
+                    "IpProtocol": "tcp",
+                    "FromPort": 22,
+                    "ToPort": 22,
+                    "UserIdGroupPairs": [],
+                    "IpRanges": [
+                        {
+                            "CidrIp": "115.99.155.188/32"
+                        }
+                    ],
+                    "Ipv6Ranges": [],
+                    "PrefixListIds": []
+                }
+            ]
+        },
+        {
+            "GroupId": "sg-00189debb01788bab",
+            "IpPermissionsEgress": [
+                {
+                    "IpProtocol": "-1",
+                    "UserIdGroupPairs": [],
+                    "IpRanges": [
+                        {
+                            "CidrIp": "0.0.0.0/0"
+                        }
+                    ],
+                    "Ipv6Ranges": [],
+                    "PrefixListIds": []
+                }
+            ],
+            "VpcId": "vpc-07c65415bef240784",
+            "SecurityGroupArn": "arn:aws:ec2:us-east-1:039077527503:security-group/sg-00189debb01788bab",
+            "OwnerId": "039077527503",
+            "GroupName": "launch-wizard-3",
+            "Description": "launch-wizard-3 created 2026-10-08T12:12:15.621Z",
+            "IpPermissions": [
+                {
+                    "IpProtocol": "tcp",
+                    "FromPort": 22,
+                    "ToPort": 22,
+                    "UserIdGroupPairs": [],
+                    "IpRanges": [
+                        {
+                            "CidrIp": "115.99.155.188/32"
+                        }
+                    ],
+                    "Ipv6Ranges": [],
+                    "PrefixListIds": []
+                }
+            ]
+        },
+        {
+            "GroupId": "sg-0f5583609e7ac7620",
+            "IpPermissionsEgress": [
+                {
+                    "IpProtocol": "-1",
+                    "UserIdGroupPairs": [],
+                    "IpRanges": [
+                        {
+                            "CidrIp": "0.0.0.0/0"
+                        }
+                    ],
+                    "Ipv6Ranges": [],
+                    "PrefixListIds": []
+                }
+            ],
+            "Tags": [
+                {
+                    "Key": "Name",
+                    "Value": "roboshop-dev-bastion"
+                },
+                {
+                    "Key": "Project",
+                    "Value": "roboshop"
+                },
+                {
+                    "Key": "Environment",
+                    "Value": "dev"
+                },
+                {
+                    "Key": "Terraform",
+                    "Value": "true"
+                }
+            ],
+            "VpcId": "vpc-0c955eca9b463496a",
+            "SecurityGroupArn": "arn:aws:ec2:us-east-1:039077527503:security-group/sg-0f5583609e7ac7620",
+            "OwnerId": "039077527503",
+            "GroupName": "roboshop-dev-bastion",
+            "Description": "Allow traffic for bastion project roboshop in dev",
+            "IpPermissions": [
+                {
+                    "IpProtocol": "tcp",
+                    "FromPort": 22,
+                    "ToPort": 22,
+                    "UserIdGroupPairs": [],
+                    "IpRanges": [
+                        {
+                            "CidrIp": "115.99.155.188/32"
+                        }
+                    ],
+                    "Ipv6Ranges": [],
+                    "PrefixListIds": []
+                }
+            ]
+        },
+        {
+            "GroupId": "sg-007fd36506a2af5a4",
+            "IpPermissionsEgress": [
+                {
+                    "IpProtocol": "-1",
+                    "UserIdGroupPairs": [],
+                    "IpRanges": [
+                        {
+                            "CidrIp": "0.0.0.0/0"
+                        }
+                    ],
+                    "Ipv6Ranges": [],
+                    "PrefixListIds": []
+                }
+            ],
+            "VpcId": "vpc-07c65415bef240784",
+            "SecurityGroupArn": "arn:aws:ec2:us-east-1:039077527503:security-group/sg-007fd36506a2af5a4",
+            "OwnerId": "039077527503",
+            "GroupName": "launch-wizard-2",
+            "Description": "launch-wizard-2 created 2026-10-07T05:46:56.921Z",
+            "IpPermissions": [
+                {
+                    "IpProtocol": "tcp",
+                    "FromPort": 22,
+                    "ToPort": 22,
+                    "UserIdGroupPairs": [],
+                    "IpRanges": [
+                        {
+                            "CidrIp": "115.99.155.188/32"
+                        }
+                    ],
+                    "Ipv6Ranges": [],
+                    "PrefixListIds": []
+                }
+            ]
+        },
+        {
+            "GroupId": "sg-01221586c4925c00e",
+            "IpPermissionsEgress": [
+                {
+                    "IpProtocol": "-1",
+                    "UserIdGroupPairs": [],
+                    "IpRanges": [
+                        {
+                            "CidrIp": "0.0.0.0/0"
+                        }
+                    ],
+                    "Ipv6Ranges": [],
+                    "PrefixListIds": []
+                }
+            ],
+            "VpcId": "vpc-0c955eca9b463496a",
+            "SecurityGroupArn": "arn:aws:ec2:us-east-1:039077527503:security-group/sg-01221586c4925c00e",
+            "OwnerId": "039077527503",
+            "GroupName": "default",
+            "Description": "default VPC security group",
+            "IpPermissions": [
+                {
+                    "IpProtocol": "-1",
+                    "UserIdGroupPairs": [
+                        {
+                            "UserId": "039077527503",
+                            "GroupId": "sg-01221586c4925c00e"
+                        }
+                    ],
+                    "IpRanges": [],
+                    "Ipv6Ranges": [],
+                    "PrefixListIds": []
+                }
+            ]
+        },
+        {
+            "GroupId": "sg-0c6b02f598d1df83a",
+            "IpPermissionsEgress": [
+                {
+                    "IpProtocol": "-1",
+                    "UserIdGroupPairs": [],
+                    "IpRanges": [
+                        {
+                            "CidrIp": "0.0.0.0/0"
+                        }
+                    ],
+                    "Ipv6Ranges": [],
+                    "PrefixListIds": []
+                }
+            ],
+            "VpcId": "vpc-07c65415bef240784",
+            "SecurityGroupArn": "arn:aws:ec2:us-east-1:039077527503:security-group/sg-0c6b02f598d1df83a",
+            "OwnerId": "039077527503",
+            "GroupName": "default",
+            "Description": "default VPC security group",
+            "IpPermissions": [
+                {
+                    "IpProtocol": "-1",
+                    "UserIdGroupPairs": [
+                        {
+                            "UserId": "039077527503",
+                            "GroupId": "sg-0c6b02f598d1df83a"
+                        }
+                    ],
+                    "IpRanges": [],
+                    "Ipv6Ranges": [],
+                    "PrefixListIds": []
+                },
+                {
+                    "IpProtocol": "tcp",
+                    "FromPort": 22,
+                    "ToPort": 22,
+                    "UserIdGroupPairs": [],
+                    "IpRanges": [
+                        {
+                            "CidrIp": "115.99.155.188/32"
+                        }
+                    ],
+                    "Ipv6Ranges": [],
+                    "PrefixListIds": []
+                }
+            ]
+        },
+        {
+            "GroupId": "sg-015e8d6fdb7cb8283",
+            "IpPermissionsEgress": [
+                {
+                    "IpProtocol": "-1",
+                    "UserIdGroupPairs": [],
+                    "IpRanges": [
+                        {
+                            "CidrIp": "0.0.0.0/0"
+                        }
+                    ],
+                    "Ipv6Ranges": [],
+                    "PrefixListIds": []
+                }
+            ],
+            "VpcId": "vpc-07c65415bef240784",
+            "SecurityGroupArn": "arn:aws:ec2:us-east-1:039077527503:security-group/sg-015e8d6fdb7cb8283",
+            "OwnerId": "039077527503",
+            "GroupName": "launch-wizard-6",
+            "Description": "launch-wizard-6 created 2026-10-10T09:02:45.465Z",
+            "IpPermissions": [
+                {
+                    "IpProtocol": "tcp",
+                    "FromPort": 22,
+                    "ToPort": 22,
+                    "UserIdGroupPairs": [],
+                    "IpRanges": [
+                        {
+                            "CidrIp": "115.99.155.188/32"
+                        }
+                    ],
+                    "Ipv6Ranges": [],
+                    "PrefixListIds": []
+                }
+            ]
+        },
+        {
+            "GroupId": "sg-084352845059f9c33",
+            "IpPermissionsEgress": [
+                {
+                    "IpProtocol": "-1",
+                    "UserIdGroupPairs": [],
+                    "IpRanges": [
+                        {
+                            "CidrIp": "0.0.0.0/0"
+                        }
+                    ],
+                    "Ipv6Ranges": [],
+                    "PrefixListIds": []
+                }
+            ],
+            "VpcId": "vpc-07c65415bef240784",
+            "SecurityGroupArn": "arn:aws:ec2:us-east-1:039077527503:security-group/sg-084352845059f9c33",
+            "OwnerId": "039077527503",
+            "GroupName": "launch-wizard-7",
+            "Description": "launch-wizard-7 created 2026-10-11T07:07:21.713Z",
+            "IpPermissions": [
+                {
+                    "IpProtocol": "tcp",
+                    "FromPort": 22,
+                    "ToPort": 22,
+                    "UserIdGroupPairs": [],
+                    "IpRanges": [
+                        {
+                            "CidrIp": "115.99.155.188/32"
+                        }
+                    ],
+                    "Ipv6Ranges": [],
+                    "PrefixListIds": []
+                }
+            ]
+        }
+    ]
+}
