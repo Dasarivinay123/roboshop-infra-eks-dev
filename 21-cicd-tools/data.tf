@@ -53,10 +53,10 @@ data "aws_ssm_parameter" "jenkins_agent_sg_id" {
 data "aws_ssm_parameter" "sonar_sg_id" {
     name = "/${var.project}/${var.environment}/sonar_sg_id"
 }
-
+/* 
 data "aws_ssm_parameter" "runner_sg_id" {
     name = "/${var.project}/${var.environment}/runner_sg_id"
-}
+} */
 /* 
 data "aws_ssm_parameter" "eks_cluster_name" {
     name = "/${var.project}/${var.environment}/eks_cluster_name"
