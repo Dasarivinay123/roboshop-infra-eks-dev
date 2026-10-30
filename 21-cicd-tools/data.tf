@@ -20,7 +20,7 @@ data "aws_ami" "joindevops" {
 
 data "aws_ami" "sonarqube" {
   most_recent = true
-  owners      = ["039077527503"] # Solve DevOps
+  owners      = ["679593333241"] # Solve DevOps
 
   filter {
     name   = "name"
