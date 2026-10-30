@@ -37,9 +37,9 @@ data "aws_ami" "sonarqube" {
     values = ["x86_64"]
   }
 }
-
+# ///roboshop/dev/database-subnet-ids | /roboshop/dev/public-subnet-ids
 data "aws_ssm_parameter" "public_subnet_ids" {
-    name = "/${var.project}/${var.environment}/public_subnet_ids"
+    name = "/${var.project}/${var.environment}/public-subnet-ids"
 }
 
 data "aws_ssm_parameter" "jenkins_sg_id" {
