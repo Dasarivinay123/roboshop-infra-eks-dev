@@ -17,7 +17,8 @@ variable "sg_names" {
     "lbc",
     "bastion",
     "eks_control_plane",
-    "eks_node"
+    "eks_node",
+    "jenkins","jenkins_agent","sonar"
     # "vpn"
   ]
 }
