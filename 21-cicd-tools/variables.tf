@@ -19,5 +19,5 @@ variable "sonar" {
 }
 
 variable "jenkins" {
-    default = false
+    default = true
 }
