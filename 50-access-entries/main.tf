@@ -19,9 +19,9 @@ resource "aws_eks_access_policy_association" "bastion" {
 }
 
 resource "aws_eks_access_entry" "runner" {
-  cluster_name      = local.eks_cluster_name
-  principal_arn     = local.runner_iam_role_arn
-  type              = "STANDARD"
+  cluster_name  = local.eks_cluster_name
+  principal_arn = local.runner_iam_role_arn
+  type          = "STANDARD"
 }
 
 resource "aws_eks_access_policy_association" "runner" {
@@ -30,7 +30,17 @@ resource "aws_eks_access_policy_association" "runner" {
   principal_arn = local.runner_iam_role_arn
 
   access_scope {
-    type       = "namespace"
-    namespaces = ["roboshop-dev", "roboshop-sit", "roboshop-uat", "roboshop-prod"]
+    type = "namespace"
+
+    namespaces = [
+      "roboshop-dev",
+      "roboshop-sit",
+      "roboshop-uat",
+      "roboshop-prod"
+    ]
   }
+
+  depends_on = [
+    aws_eks_access_entry.runner
+  ]
 }
