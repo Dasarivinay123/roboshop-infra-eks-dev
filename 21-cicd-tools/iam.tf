@@ -19,7 +19,7 @@ resource "aws_iam_role" "runner" {
   tags = merge(
     local.common_tags,
     {
-        Name = "${var.project}-${var.environment}-runner"
+      Name = "${var.project}-${var.environment}-runner"
     }
   )
 }

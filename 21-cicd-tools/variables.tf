@@ -1,26 +1,26 @@
 variable "project" {
-    default = "roboshop"
+  default = "roboshop"
 }
 
 variable "environment" {
-    default = "dev"
+  default = "dev"
 }
 
 variable "zone_id" {
-    default = "Z0868688X0WNEYRTI3J7"
+  default = "Z0868688X0WNEYRTI3J7"
 }
 
 variable "domain_name" {
-    default = "vinaydevops.online"
+  default = "vinaydevops.online"
 }
 
 variable "sonar" {
-    default = false
+  default = false
 }
 
 variable "jenkins" {
-    default = false
+  default = false
 }
 variable "runner" {
-    default = true
+  default = true
 }
